@@ -1,6 +1,7 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
+  --tertiary-color: #272142;
   --heading-font-family: "Merriweather", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -29,7 +30,7 @@ h2 {
 }
 
 p {
-  color: #272142;
+  color: var(--tertiary-color);
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -52,7 +53,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #272142;
+  color: var(--tertiary-color);
 }
 
 .content-container {
@@ -111,6 +112,36 @@ p {
   margin-top: 60px;
 }
 
+.logo {
+  max-height: 50px;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
 @media (max-width: 992px) {
   h1 {
     font-size: 44px;
@@ -121,6 +152,14 @@ p {
     font-size: 44px;
   }
 
+  nav a {
+    font-size: 14px;
+  }
+
+  .logo {
+    max-height: 40px;
+  }
+
   .hero {
     padding: 80px 20px;
   }
@@ -129,19 +168,25 @@ p {
     line-height: 1.25;
   }
 
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
-
   .content {
     text-align: center;
     margin: 30px auto;
     padding: 0;
   }
 
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
   .headshot-img {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-height: 30px;
   }
 }
