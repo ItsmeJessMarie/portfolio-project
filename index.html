@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jessica Boll</title>
+    <meta
+      name="description"
+      content="Jessica is a front-end engineer based in America. Check out her projects and ways to connect with her."
+    />
+    <title>Front-end developer - Jessica Boll</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -33,13 +37,18 @@
     <div class="container">
       <nav class="d-flex justify-content-between align-items-center">
         <a href="/">
-          <img src="images/JB-logo-shecodes.png" alt="" class="logo" />
+          <img
+            src="images/JB-logo-shecodes.png"
+            alt="Jessica Logo"
+            title="Homepage"
+            class="logo"
+          />
         </a>
         <ul class="d-none d-sm-block">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/work.html">Work</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li class="active"><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/about.html" title="About Jessica">About</a></li>
+          <li><a href="/work.html" title="Jessica's work">Work</a></li>
+          <li><a href="/contact.html" title="Contact Jessica">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -48,7 +57,9 @@
       <h1>Jessica Boll</h1>
       <h2 class="mb-5">Front-end developer, based in America</h2>
       <div>
-        <a href="/contact.html" class="btn btn-branding">Contact me</a>
+        <a href="/contact.html" class="btn btn-branding" title="Contact me"
+          >Contact me</a
+        >
       </div>
     </div>
     <p class="text-center m-5">Featuring my favorite projects to date</p>
@@ -56,7 +67,12 @@
     <div class="container main-page">
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="images/video-games.png" class="img-fluid rounded" alt="" />
+          <img
+            src="images/video-games.png"
+            class="img-fluid rounded"
+            alt="Video game project preview"
+            title="Video game project preview"
+          />
         </div>
         <div class="col">
           <div class="project-description">
@@ -71,6 +87,7 @@
               href="https://jb-video-game-project.netlify.app/"
               target="_blank"
               class="btn btn-branding-outline"
+              title="View video game project"
               >View project</a
             >
           </div>
@@ -89,17 +106,28 @@
               href="https://jb-weather-app.netlify.app/"
               target="_blank"
               class="btn btn-branding-outline"
+              title="View weather app project"
               >View project</a
             >
           </div>
         </div>
         <div class="col d-none d-lg-block">
-          <img src="images/weather-app.png" class="img-fluid rounded" alt="" />
+          <img
+            src="images/weather-app.png"
+            class="img-fluid rounded"
+            alt="Weather app project preview"
+            title="Weather app project preview"
+          />
         </div>
       </div>
       <div class="row mb-5">
         <div class="col d-none d-lg-block">
-          <img src="images/world-clock.png" class="img-fluid rounded" alt="" />
+          <img
+            src="images/world-clock.png"
+            class="img-fluid rounded"
+            alt="World clock project preview"
+            title="World clock project preview"
+          />
         </div>
         <div class="col">
           <div class="project-description">
@@ -113,6 +141,7 @@
               href="https://jb-world-clock.netlify.app/"
               target="_blank"
               class="btn btn-branding-outline"
+              title="View world clock project"
               >View project</a
             >
           </div>
@@ -127,38 +156,64 @@
             <p class="text-muted">Let's work together</p>
           </div>
           <div>
-            <a href="/contact.html" class="btn btn-branding">Contact me</a>
+            <a href="/contact.html" class="btn btn-branding" title="Contact me"
+              >Contact me</a
+            >
           </div>
         </div>
         <div class="d-flex justify-content-center mb-4">
-          <a href="mailto:jboll262@gmail.com" class="email-link"
+          <a
+            href="mailto:jboll262@gmail.com"
+            class="email-link"
+            title="Email me"
             >jboll262@gmail.com</a
           >
         </div>
         <div class="social-links d-flex justify-content-center">
-          <a href="https://github.com/ItsmeJessMarie" target="_blank">
+          <a
+            href="https://github.com/ItsmeJessMarie"
+            target="_blank"
+            title="GitHub profile"
+          >
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.instagram.com/jess.m.boll/" target="_blank">
+          <a
+            href="https://www.instagram.com/jess.m.boll/"
+            target="_blank"
+            title="Instagram profile"
+          >
             <i class="fab fa-instagram"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/jessica-boll-684b01207/"
             target="_blank"
+            title="LinkedIn profile"
           >
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
         <div class="container">
-          <nav class="d-flex justify-content-center align-items-center mt-4">
+          <nav class="d-flex justify-content-center align-items-center mt-3">
             <ul class="d-block d-sm-none">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/work.html">Work</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li class="active"><a href="/" title="Homepage">Home</a></li>
+              <li><a href="/about.html" title="About Jessica">About</a></li>
+              <li><a href="/work.html" title="Jessica's work">Work</a></li>
+              <li>
+                <a href="/contact.html" title="Contact Jessica">Contact</a>
+              </li>
             </ul>
           </nav>
         </div>
+        <p class="text-center mt-2 github-repository">
+          This project was coded by Jessica Boll, and it is
+          <a
+            href="https://github.com/ItsmeJessMarie/portfolio-project"
+            target="_blank"
+            class="github-repository"
+            title="GitHub portfolio project"
+            >open sourced</a
+          >
+        </p>
       </footer>
     </div>
   </body>
