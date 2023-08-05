@@ -111,6 +111,10 @@ p {
   padding: 50px 15px;
 }
 
+.project-description h2 {
+  margin-bottom: 30px;
+}
+
 .headshot-img {
   border-radius: 12px;
   display: block;
@@ -231,6 +235,10 @@ footer .social-links a:hover {
 
   .content-container {
     padding: 40px 20px 0;
+  }
+
+  .project-description h2 {
+    margin-bottom: 20px;
   }
 
   h2 {
