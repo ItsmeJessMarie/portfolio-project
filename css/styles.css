@@ -137,10 +137,11 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  margin-left: 15px;
+  margin: 0 10px 0 10px;
 }
 
 nav a {
+  font-size: 18px;
   text-decoration: none;
   color: var(--tertiary-color);
   transition: all 100ms ease-in-out;
@@ -249,7 +250,8 @@ footer .social-links a:hover {
     font-size: 26px;
   }
 
-  nav a {
+  nav a,
+  .btn {
     font-size: 16px;
   }
 
@@ -276,6 +278,18 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 576px) {
+  h2 {
+    font-size: 38px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  nav li {
+    margin-left: 0;
+  }
+
   footer .social-links {
     margin: 0 0 30px;
   }
@@ -284,8 +298,16 @@ footer .social-links a:hover {
     margin: 0 10px;
   }
 
+  .btn {
+    font-size: 16px;
+    padding: 16px 28px;
+  }
   .github-repository {
     padding: 0 10px;
     line-height: 1.5;
+  }
+
+  .headshot-img {
+    max-height: 450px;
   }
 }
