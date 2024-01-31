@@ -1,7 +1,7 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --tertiary-color: #272142;
+  --branding-color: #bd8fa2;
+  --secondary-color: #ededed;
+  --tertiary-color: #464a4e;
   --heading-font-family: "Merriweather", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -16,6 +16,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--tertiary-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
@@ -61,7 +62,7 @@ p {
 }
 
 .content-container {
-  padding: 60px 20px;
+  padding: 60px 20px 0 20px;
 }
 
 .content h1 {
@@ -122,7 +123,11 @@ p {
 }
 
 .logo {
-  max-height: 50px;
+  max-height: 65px;
+}
+
+.col-md-6.mb-4 {
+  text-align: center;
 }
 
 nav {
@@ -200,13 +205,13 @@ footer .social-links a:hover {
   padding: 10px 14px;
 }
 
-.github-repository a {
+.profile-links a {
   text-decoration: none;
-  color: black;
+  color: var(--branding-color);
 }
 
-.github-repository a:hover {
-  color: var(--branding-color);
+.profile-links a:hover {
+  color: var(--tertiary-color);
 }
 
 @media (max-width: 1400px) {
@@ -272,7 +277,7 @@ footer .social-links a:hover {
     margin: 0 auto;
   }
 
-  .github-repository {
+  .profile-links {
     font-size: 14px;
   }
 }
@@ -302,7 +307,7 @@ footer .social-links a:hover {
     font-size: 16px;
     padding: 16px 28px;
   }
-  .github-repository {
+  .profile-links {
     padding: 0 10px;
     line-height: 1.5;
   }
